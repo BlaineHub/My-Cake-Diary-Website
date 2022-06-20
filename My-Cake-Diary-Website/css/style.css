@@ -40,6 +40,25 @@
   background-color: #cf711f;
 }
 
+/***** MOBILE NAV ******/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4rem;
+  width: 4rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /*******************HEADER*********************/
 .header {
   display: flex;
@@ -54,6 +73,23 @@
 .logo {
   height: 8rem;
   width: 8rem;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: hsla(27, 81%, 86%, 0.87);
+  z-index: 9999;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.sticky .section-hero {
+  margin-top: 10rem;
 }
 
 /*********************HERO*********************/
@@ -79,7 +115,7 @@
 }
 
 .hero-img {
-  width: 130%;
+  width: 150%;
 }
 
 .delivered-meals {
